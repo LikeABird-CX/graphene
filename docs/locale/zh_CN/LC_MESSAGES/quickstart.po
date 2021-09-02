@@ -1,0 +1,219 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Graphene 2016
+# This file is distributed under the same license as the Graphene package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Graphene 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-02 11:47+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../quickstart.rst:2
+msgid "Getting started"
+msgstr "入门指南"
+
+#: ../../quickstart.rst:5
+msgid "Introduction"
+msgstr "简介"
+
+#: ../../quickstart.rst:8
+msgid "What is GraphQL?"
+msgstr "什么是GraphQL？"
+
+#: ../../quickstart.rst:10
+msgid "GraphQL is a query language for your API."
+msgstr "GraphQL是为你的API提供的查询语言。"
+
+#: ../../quickstart.rst:12
+msgid "It provides a standard way to:"
+msgstr "它提供了一种标准的方式来:"
+
+#: ../../quickstart.rst:14
+msgid "*describe data provided by a server* in a statically typed **Schema**"
+msgstr "在静态类型的 **模式(Schema)** *描述服务器提供的数据* "
+
+#: ../../quickstart.rst:15
+msgid ""
+"*request data* in a **Query** which exactly describes your data "
+"requirements and"
+msgstr ""
+"在一个 **查询(Query)** 中 *请求数据* ，准确描述你的数据要求和"
+
+#: ../../quickstart.rst:16
+msgid "*receive data* in a **Response** containing only the data you requested."
+msgstr "在一个只包含你要求的数据的 **Response(响应)**  *接收数据* 。"
+
+#: ../../quickstart.rst:18
+msgid ""
+"For an introduction to GraphQL and an overview of its concepts, please "
+"refer to `the official GraphQL documentation`_."
+msgstr ""
+"关于GraphQL的介绍和其概念的概述，"
+"请参考 `官方GraphQL文档 <http://graphql.org/learn/>`_ 。"
+
+#: ../../quickstart.rst:23
+msgid "What is Graphene?"
+msgstr "什么是Graphene？"
+
+#: ../../quickstart.rst:25
+msgid ""
+"Graphene is a library that provides tools to implement a GraphQL API in "
+"Python using a *code-first* approach."
+msgstr ""
+"Graphene是一个库，它提供了在Python中使用 *代码优先(code-first)* 方法实现GraphQL API的工具。"
+
+#: ../../quickstart.rst:27
+msgid ""
+"Compare Graphene's *code-first* approach to building a GraphQL API with "
+"*schema-first* approaches like `Apollo Server`_ (JavaScript) or Ariadne_ "
+"(Python). Instead of writing GraphQL **Schema Definition Language "
+"(SDL)**, we write Python code to describe the data provided by your "
+"server."
+msgstr ""
+"将Graphene构建GraphQL API的 *代码优先(code-first)* 方法"
+"与 `Apollo Server`_ （JavaScript）或 Ariadne_ （Python）等 *模式优先(schema-first)* 方法进行比较。"
+"我们不写GraphQL **模式定义语言（SDL）** ，而是写Python代码来描述你的服务器提供的数据。"
+
+#: ../../quickstart.rst:33
+msgid ""
+"Graphene is fully featured with integrations for the most popular web "
+"frameworks and ORMs. Graphene produces schemas that are fully compliant "
+"with the GraphQL spec and provides tools and patterns for building a "
+"Relay-Compliant API as well."
+msgstr ""
+"Graphene功能齐全，可与最流行的Web框架和ORM集成。Graphene产生的模式完全符合GraphQL规范，"
+"并为构建符合Relay规范的API提供工具和模式(patterns)。"
+
+#: ../../quickstart.rst:36
+msgid "An example in Graphene"
+msgstr "Graphene的一个例子"
+
+#: ../../quickstart.rst:38
+msgid ""
+"Let’s build a basic GraphQL schema to say \"hello\" and \"goodbye\" in "
+"Graphene."
+msgstr "让我们建立一个基本的GraphQL模式，在Graphene中说：\"hello\"和\"goodbye\"。"
+
+#: ../../quickstart.rst:40
+msgid ""
+"When we send a **Query** requesting only one **Field**, ``hello``, and "
+"specify a value for the ``name`` **Argument**..."
+msgstr ""
+"当我们发送一个 **Query** ，只要求一个 **Field** ， ``hello`` ，并为 ``name`` **Argument** 指定一个值。"
+
+#: ../../quickstart.rst:48
+msgid ""
+"...we would expect the following Response containing only the data "
+"requested (the ``goodbye`` field is not resolved)."
+msgstr "...我们希望以下的响应只包含所要求的数据（ ``goodbye`` 字段没有resolved）。"
+
+#: ../../quickstart.rst:60
+msgid "Requirements"
+msgstr "依赖"
+
+#: ../../quickstart.rst:62
+msgid "Python (2.7, 3.4, 3.5, 3.6, pypy)"
+msgstr ""
+
+#: ../../quickstart.rst:63
+msgid "Graphene (2.0)"
+msgstr ""
+
+#: ../../quickstart.rst:66
+msgid "Project setup"
+msgstr "项目设置"
+
+#: ../../quickstart.rst:73
+msgid "Creating a basic Schema"
+msgstr "创建一个基本的模式(Schema)"
+
+#: ../../quickstart.rst:75
+msgid "In Graphene, we can define a simple schema using the following code:"
+msgstr "在Graphene中，我们可以用以下代码定义一个简单的模式:"
+
+#: ../../quickstart.rst:97
+msgid ""
+"A GraphQL **Schema** describes each **Field** in the data model provided "
+"by the server using scalar types like *String*, *Int* and *Enum* and "
+"compound types like *List* and *Object*. For more details refer to the "
+"Graphene :ref:`TypesReference`."
+msgstr ""
+"GraphQL **Schema** 描述了服务器提供的数据模型中的每个 **Field** ，"
+"使用标量(scalar)类型，如 *String* 、 *Int* 和 *Enum* 以及复合类型，"
+"如 *List* 和 *Object* 。更多细节请参考Graphene :ref:`TypesReference`。"
+
+#: ../../quickstart.rst:99
+msgid ""
+"Our schema can also define any number of **Arguments** for our "
+"**Fields**. This is a powerful way for a **Query** to describe the exact "
+"data requirements for each **Field**."
+msgstr ""
+"我们的模式也可以为我们的 **Fields** 定义任意数量的 **Arguments** 。"
+"这是一种强大的方式，可以让 **Query** 描述每个 **Field** 的确切数据要求。"
+
+#: ../../quickstart.rst:101
+msgid ""
+"For each **Field** in our **Schema**, we write a **Resolver** method to "
+"fetch data requested by a client's **Query** using the current context "
+"and **Arguments**. For more details, refer to this section on "
+":ref:`Resolvers`."
+msgstr ""
+"对于我们的 **Schema** 中的每个 **Field** ，我们写一个 **Resolver** 方法，"
+"使用当前的上下文和 **Arguments** 来获取客户端的 **Query** 所要求的数据。"
+"更多细节，请参考本节 :ref:`Resolvers` 。"
+
+#: ../../quickstart.rst:104
+msgid "Schema Definition Language (SDL)"
+msgstr "模式定义语言(SDL)"
+
+#: ../../quickstart.rst:106
+msgid ""
+"In the `GraphQL Schema Definition Language`_, we could describe the "
+"fields defined by our example code as shown below."
+msgstr ""
+"在 `GraphQL Schema Definition Language`_ 中，我们可以描述我们的示例代码所定义的字段，如下图所示。"
+
+#: ../../quickstart.rst:117
+msgid ""
+"Further examples in this documentation will use SDL to describe schema "
+"created by ObjectTypes and other fields."
+msgstr "本文档中的进一步例子将使用SDL来描述由ObjectTypes和其他字段创建的模式。"
+
+#: ../../quickstart.rst:120
+msgid "Querying"
+msgstr "查询(Querying)"
+
+#: ../../quickstart.rst:122
+msgid ""
+"Then we can start querying our **Schema** by passing a GraphQL query "
+"string to ``execute``:"
+msgstr "然后我们可以通过向 ``execute`` 传递GraphQL查询字符串来开始查询我们的 **Schema** 。"
+
+#: ../../quickstart.rst:139
+msgid "Next steps"
+msgstr "接下来的步骤"
+
+#: ../../quickstart.rst:141
+msgid "Congrats! You got your first Graphene schema working!"
+msgstr "祝贺你!你的第一个Graphene模式成功了!"
+
+#: ../../quickstart.rst:143
+msgid ""
+"Normally, we don't need to directly execute a query string against our "
+"schema as Graphene provides many useful Integrations with popular web "
+"frameworks like Flask and Django. Check out :ref:`Integrations` for more "
+"information on how to get started serving your GraphQL API."
+msgstr ""
+"通常情况下，我们不需要直接对我们的模式执行查询字符串，因为Graphene提供了许多有用的集成，"
+"如Flask和Django等流行的Web框架。查看 :ref:`Integrations` ，"
+"了解更多关于如何开始为你的GraphQL API服务的信息。"
+

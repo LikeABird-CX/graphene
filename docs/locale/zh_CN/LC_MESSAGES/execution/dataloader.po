@@ -1,0 +1,127 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Graphene 2016
+# This file is distributed under the same license as the Graphene package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Graphene 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-02 11:47+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../execution/dataloader.rst:2
+msgid "Dataloader"
+msgstr ""
+
+#: ../../execution/dataloader.rst:4
+msgid ""
+"DataLoader is a generic utility to be used as part of your application's "
+"data fetching layer to provide a simplified and consistent API over "
+"various remote data sources such as databases or web services via "
+"batching and caching."
+msgstr ""
+"DataLoader是一个通用工具，可作为你的应用程序的数据获取层的一部分，通过批处理和缓存，"
+"在各种远程数据源（如数据库或网络服务）上提供一个简化和一致的API。"
+
+#: ../../execution/dataloader.rst:11
+msgid "Batching"
+msgstr "批处理(Batching)"
+
+#: ../../execution/dataloader.rst:13
+msgid ""
+"Batching is not an advanced feature, it's DataLoader's primary feature. "
+"Create loaders by providing a batch loading function."
+msgstr ""
+"批处理不是一个高级功能，它是DataLoader的主要功能。"
+"通过提供一个批量加载功能来创建加载器。"
+
+#: ../../execution/dataloader.rst:28
+msgid ""
+"A batch loading function accepts a list of keys, and returns a "
+"``Promise`` which resolves to a list of ``values``."
+msgstr "一个批处理加载函数接受一个键的列表，并返回一个 ``Promise`` ，该函数可解析为一个 ``values`` 的列表。"
+
+#: ../../execution/dataloader.rst:31
+msgid ""
+"Then load individual values from the loader. ``DataLoader`` will coalesce"
+" all individual loads which occur within a single frame of execution "
+"(executed once the wrapping promise is resolved) and then call your batch"
+" function with all requested keys."
+msgstr ""
+"然后从加载器中加载单个值。 ``DataLoader`` 将合并所有在一帧执行中发生的单独的加载"
+"（一旦包装promise被resolved就执行），然后用所有请求的键调用你的批处理函数。"
+
+#: ../../execution/dataloader.rst:46
+msgid ""
+"A naive application may have issued *four* round-trips to a backend for "
+"the required information, but with ``DataLoader`` this application will "
+"make at most *two*."
+msgstr ""
+"一个简单的应用程序可能会向后端发出 *4* 次往返，以获取所需的信息，"
+"但有了 ``DataLoader`` ，这个应用程序将最多只能进行 *两* 次。"
+
+#: ../../execution/dataloader.rst:49
+msgid ""
+"Note that loaded values are one-to-one with the keys and must have the "
+"same order. This means that if you load all values from a single query, "
+"you must make sure that you then order the query result for the results "
+"to match the keys:"
+msgstr ""
+"注意，加载的值与键是一对一的，并且必须有相同的顺序。这意味着，如果你从一个单一的查询中加载所有的值。"
+"你必须确保你随后对查询结果进行排序，使其与键相匹配:"
+
+#: ../../execution/dataloader.rst:62
+msgid ""
+"``DataLoader`` allows you to decouple unrelated parts of your application"
+" without sacrificing the performance of batch data-loading. While the "
+"loader presents an API that loads individual values, all concurrent "
+"requests will be coalesced and presented to your batch loading function. "
+"This allows your application to safely distribute data fetching "
+"requirements throughout your application and maintain minimal outgoing "
+"data requests."
+msgstr ""
+"``DataLoader`` 允许你在不牺牲批量数据加载性能的情况下，将你的应用程序中不相关的部分解耦。"
+"虽然加载器提供了一个加载单个值的API，但所有并发的请求将被合并并提交给你的批量加载函数。"
+"这允许你的应用程序在整个应用程序中安全地分配数据获取要求，并保持最小的外发数据请求。"
+
+#: ../../execution/dataloader.rst:72
+msgid "Using with Graphene"
+msgstr "使用 Graphene"
+
+#: ../../execution/dataloader.rst:74
+msgid ""
+"DataLoader pairs nicely well with Graphene/GraphQL. GraphQL fields are "
+"designed to be stand-alone functions. Without a caching or batching "
+"mechanism, it's easy for a naive GraphQL server to issue new database "
+"requests each time a field is resolved."
+msgstr ""
+"DataLoader与Graphene/GraphQL搭配得很好。GraphQL字段被设计成独立的功能。"
+"如果没有缓存或批处理机制，一个简单的GraphQL服务器很容易在每次解决一个字段时发出新的数据库请求。"
+
+#: ../../execution/dataloader.rst:78
+msgid "Consider the following GraphQL request:"
+msgstr "考虑以下的GraphQL请求:"
+
+#: ../../execution/dataloader.rst:99
+msgid ""
+"Naively, if ``me``, ``bestFriend`` and ``friends`` each need to request "
+"the backend, there could be at most 13 database requests!"
+msgstr ""
+"直观地说，如果 ``me``、 ``bestFriend`` 和 ``friends`` 都需要请求后台，那么最多可能有13个数据库请求!"
+
+#: ../../execution/dataloader.rst:103
+msgid ""
+"When using DataLoader, we could define the User type using our previous "
+"example with leaner code and at most 4 database requests, and possibly "
+"fewer if there are cache hits."
+msgstr ""
+"当使用DataLoader时，我们可以使用我们之前的例子来定义User类型，代码更精简，"
+"最多只有4个数据库请求，如果有缓存命中的话，可能会更少。"

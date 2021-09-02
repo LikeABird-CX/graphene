@@ -1,0 +1,63 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Graphene 2016
+# This file is distributed under the same license as the Graphene package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Graphene 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-02 11:47+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../api/index.rst:2
+msgid "API Reference"
+msgstr "API参考"
+
+#: ../../api/index.rst:5
+msgid "Schema"
+msgstr "模式(Schema)"
+
+#: ../../api/index.rst:14
+msgid "Object types"
+msgstr "对象类型(Object types)"
+
+#: ../../api/index.rst:26
+msgid "Fields (Mounted Types)"
+msgstr "字段（挂载类型）"
+
+#: ../../api/index.rst:35
+msgid "Fields (Unmounted Types)"
+msgstr "字段（未安装的类型)"
+
+#: ../../api/index.rst:40
+msgid "GraphQL Scalars"
+msgstr "GraphQL 标量(Scalars)"
+
+#: ../../api/index.rst:53
+msgid "Graphene Scalars"
+msgstr "Graphene 标量(Scalars)"
+
+#: ../../api/index.rst:70
+msgid "Enum"
+msgstr ""
+
+#: ../../api/index.rst:75
+msgid "Structures"
+msgstr "结构"
+
+#: ../../api/index.rst:82
+msgid "Type Extension"
+msgstr "类型扩展"
+
+#: ../../api/index.rst:89
+msgid "Execution Metadata"
+msgstr "执行元数据(Metadata)"
+
