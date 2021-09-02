@@ -1,0 +1,47 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Graphene 2016
+# This file is distributed under the same license as the Graphene package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Graphene 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-02 11:47+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../relay/mutations.rst:2
+msgid "Mutations"
+msgstr "突变(Mutations)"
+
+#: ../../relay/mutations.rst:4
+msgid "Most APIs don’t just allow you to read data, they also allow you to write."
+msgstr "大多数API不仅允许你读取数据，还允许你写入。"
+
+#: ../../relay/mutations.rst:7
+msgid ""
+"In GraphQL, this is done using mutations. Just like queries, Relay puts "
+"some additional requirements on mutations, but Graphene nicely manages "
+"that for you. All you need to do is make your mutation a subclass of "
+"``relay.ClientIDMutation``."
+msgstr ""
+"在GraphQL中，这是用突变来完成的。就像查询一样，Relay对突变(mutations)提出了一些额外的要求，"
+"但Graphene很好地为你管理了这些。你所需要做的就是使你的突变(mutation)成为 ``relay.ClientIDMutation`` 的子类。"
+
+#: ../../relay/mutations.rst:34
+msgid "Accepting Files"
+msgstr "接受文件"
+
+#: ../../relay/mutations.rst:36
+msgid ""
+"Mutations can also accept files, that's how it will work with different "
+"integrations:"
+msgstr "突变(mutations)也可以接受文件，它将与不同的集成一起工作.(that's how it will work with different integrations.)"
+
