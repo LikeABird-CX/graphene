@@ -458,3 +458,7 @@ intersphinx_mapping = {
     ),
     "graphene_gae": ("http://docs.graphene-python.org/projects/gae/en/latest/", None),
 }
+
+
+locale_dirs = ['locale/']
+gettext_compact = False
