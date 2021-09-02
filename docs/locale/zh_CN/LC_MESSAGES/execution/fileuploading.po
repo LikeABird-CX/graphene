@@ -1,0 +1,42 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Graphene 2016
+# This file is distributed under the same license as the Graphene package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Graphene 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-02 11:47+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../execution/fileuploading.rst:2
+msgid "File uploading"
+msgstr "文件上传"
+
+#: ../../execution/fileuploading.rst:4
+msgid ""
+"File uploading is not part of the official GraphQL spec yet and is not "
+"natively implemented in Graphene."
+msgstr "文件上传还不是官方GraphQL规范的一部分，在Graphene中没有原生实现。"
+
+#: ../../execution/fileuploading.rst:7
+msgid ""
+"If your server needs to support file uploading then you can use the "
+"libary: `graphene-file-upload <https://github.com/lmcgartland/graphene-"
+"file-upload>`_ which enhances Graphene to add file uploads and conforms "
+"to the unoffical GraphQL `multipart request spec "
+"<https://github.com/jaydenseric/graphql-multipart-request-spec>`_."
+msgstr ""
+"如果你的服务器需要支持文件上传，那么你可以"
+"使用库: `graphene-file-upload <https://github.com/lmcgartland/graphene-file-upload>`_ ，"
+"它增强了Graphene以增加文件上传，并符合非官方的"
+"GraphQL `multipart request 规范 <https://github.com/jaydenseric/graphql-multipart-request-spec>`_ 。"
+

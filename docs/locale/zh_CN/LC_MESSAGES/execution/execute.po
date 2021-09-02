@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Graphene 2016
+# This file is distributed under the same license as the Graphene package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Graphene 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-02 11:47+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../execution/execute.rst:4
+msgid "Executing a query"
+msgstr "执行一个查询"
+
+#: ../../execution/execute.rst:6
+msgid ""
+"For executing a query against a schema, you can directly call the "
+"``execute`` method on it."
+msgstr "对于针对模式执行查询，你可以直接调用``execute``方法。"
+
+#: ../../execution/execute.rst:16
+msgid ""
+"``result`` represents the result of execution. ``result.data`` is the "
+"result of executing the query, ``result.errors`` is ``None`` if no errors"
+" occurred, and is a non-empty list if an error occurred."
+msgstr ""
+"``result`` 代表执行的结果。 ``result.data`` 是执行查询的结果， ``result.errors`` 如果没有发生错误"
+"则为 ``None`` ，如果发生错误则为非空列表。"
+
+#: ../../execution/execute.rst:22
+msgid "Context"
+msgstr "上下文"
+
+#: ../../execution/execute.rst:24
+msgid "You can pass context to a query via ``context``."
+msgstr "你可以通过 ``context`` 将上下文传递给查询。"
+
+#: ../../execution/execute.rst:43
+msgid "Variables"
+msgstr "变量"
+
+#: ../../execution/execute.rst:45
+msgid "You can pass variables to a query via ``variables``."
+msgstr "你可以通过 ``variables`` 将变量传递给查询。"
+
+#: ../../execution/execute.rst:73
+msgid "Root Value"
+msgstr ""
+
+#: ../../execution/execute.rst:75
+msgid ""
+"Value used for :ref:`ResolverParamParent` in root queries and mutations "
+"can be overridden using ``root`` parameter."
+msgstr ""
+"在根查询和突变(mutations)中用于 :ref:`ResolverParamParent` 的值，可以用 ``root`` 参数重写。"
+
+#: ../../execution/execute.rst:104
+msgid "Operation Name"
+msgstr "操作名称"
+
+#: ../../execution/execute.rst:106
+msgid ""
+"If there are multiple operations defined in a query string, "
+"``operation_name`` should be used to indicate which should be executed."
+msgstr ""
+"如果在一个查询字符串中定义了多个操作，应使用 ``operation_name`` 来表示应该执行哪个操作。"
+

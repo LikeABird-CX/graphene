@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Graphene 2016
+# This file is distributed under the same license as the Graphene package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Graphene 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-02 11:47+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../execution/middleware.rst:2
+msgid "Middleware"
+msgstr "中间件"
+
+#: ../../execution/middleware.rst:4
+msgid ""
+"You can use ``middleware`` to affect the evaluation of fields in your "
+"schema."
+msgstr "你可以使用 ``中间件`` 来影响你模式中字段的求值(evaluation)。"
+
+#: ../../execution/middleware.rst:6
+msgid ""
+"A middleware is any object or function that responds to "
+"``resolve(next_middleware, *args)``."
+msgstr "中间件是任何响应 ``resolve(next_middleware, *args)`` 的对象或函数。"
+
+#: ../../execution/middleware.rst:8
+msgid "Inside that method, it should either:"
+msgstr "在该方法中，它应该是:"
+
+#: ../../execution/middleware.rst:10
+msgid "Send ``resolve`` to the next middleware to continue the evaluation; or"
+msgstr "向下一个中间件发送 ``resolve`` ，以继续求值；或者"
+
+#: ../../execution/middleware.rst:11
+msgid "Return a value to end the evaluation early."
+msgstr "返回一个值以提前结束求值。"
+
+#: ../../execution/middleware.rst:15
+msgid "Resolve arguments"
+msgstr "Resolve参数"
+
+#: ../../execution/middleware.rst:17
+msgid "Middlewares ``resolve`` is invoked with several arguments:"
+msgstr "中间件的 ``resolve`` 被调用时有几个参数:"
+
+#: ../../execution/middleware.rst:19
+msgid ""
+"``next`` represents the execution chain. Call ``next`` to continue "
+"evaluation."
+msgstr "``next`` 代表执行链。调用 ``next`` 来继续求值"
+
+#: ../../execution/middleware.rst:20
+msgid "``root`` is the root value object passed throughout the query."
+msgstr "``root`` 是整个查询过程中传递的root值对象"
+
+#: ../../execution/middleware.rst:21
+msgid "``info`` is the resolver info."
+msgstr "``info`` 是解析器信息"
+
+#: ../../execution/middleware.rst:22
+msgid "``args`` is the dict of arguments passed to the field."
+msgstr "``args`` 是传递给该字段的dict参数"
+
+#: ../../execution/middleware.rst:25
+msgid "Example"
+msgstr "示例"
+
+#: ../../execution/middleware.rst:27
+msgid ""
+"This middleware only continues evaluation if the ``field_name`` is not "
+"``'user'``"
+msgstr "这个中间件只在 ``field_name`` 不是 ``'user'`` 的情况下才继续求值(evaluation)。"
+
+#: ../../execution/middleware.rst:38 ../../execution/middleware.rst:64
+msgid "And then execute it with:"
+msgstr "然后用以下方式执行:"
+
+#: ../../execution/middleware.rst:46
+msgid "Functional example"
+msgstr "函数示例"
+
+#: ../../execution/middleware.rst:48
+msgid ""
+"Middleware can also be defined as a function. Here we define a middleware"
+" that logs the time it takes to resolve each field"
+msgstr "中间件也可以被定义为一个函数。这里我们定义了一个中间件，记录resolve每个字段的时间"
+
