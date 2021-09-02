@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Graphene 2016
+# This file is distributed under the same license as the Graphene package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Graphene 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-02 11:47+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../execution/queryvalidation.rst:2
+msgid "Query Validation"
+msgstr "查询验证"
+
+#: ../../execution/queryvalidation.rst:3
+msgid ""
+"GraphQL uses query validators to check if Query AST is valid and can be "
+"executed. Every GraphQL server implements standard query validators. For "
+"example, there is an validator that tests if queried field exists on "
+"queried type, that makes query fail with \"Cannot query field on type\" "
+"error if it doesn't."
+msgstr ""
+"GraphQL使用查询验证器来检查查询AST是否有效并可以被执行。"
+"每个GraphQL服务器都会实现标准的查询验证器。例如，"
+"有一个验证器可以测试被查询的字段是否存在于被查询的类型上，"
+"如果不存在，就会出现\"无法查询类型上的字段\"的错误，导致查询失败。"
+
+#: ../../execution/queryvalidation.rst:7
+msgid ""
+"To help with common use cases, graphene provides a few validation rules "
+"out of the box."
+msgstr "为了帮助处理常见的用例，graphene提供了一些开箱即用的验证规则。"
+
+#: ../../execution/queryvalidation.rst:11
+msgid "Depth limit Validator"
+msgstr "深度限制验证器"
+
+#: ../../execution/queryvalidation.rst:12
+msgid ""
+"The depth limit validator helps to prevent execution of malicious "
+"queries. It takes in the following arguments."
+msgstr "深度限制验证器有助于防止恶意查询的执行。它接受以下参数:"
+
+#: ../../execution/queryvalidation.rst:15
+msgid ""
+"``max_depth`` is the maximum allowed depth for any operation in a GraphQL"
+" document."
+msgstr "``max_depth`` 是GraphQL文档中任何操作的最大允许深度"
+
+#: ../../execution/queryvalidation.rst:16
+msgid ""
+"``ignore`` Stops recursive depth checking based on a field name. Either a"
+" string or regexp to match the name, or a function that returns a boolean"
+msgstr ""
+"``ignore`` 停止基于字段名的递归深度检查。可以是一个字符串或regexp来匹配该名称，"
+"也可以是一个函数来返回一个布尔值"
+
+#: ../../execution/queryvalidation.rst:17
+msgid ""
+"``callback`` Called each time validation runs. Receives an Object which "
+"is a map of the depths for each operation."
+msgstr ""
+"``callback`` 在每次验证运行时调用。接收一个对象，该对象是每个操作的深度的映射(a map of the depths)。"
+
+#: ../../execution/queryvalidation.rst:20
+#: ../../execution/queryvalidation.rst:56
+msgid "Usage"
+msgstr "使用"
+
+#: ../../execution/queryvalidation.rst:22
+msgid "Here is how you would implement depth-limiting on your schema."
+msgstr "下面是你如何在你的模式(schema)上实现深度限制的方法。"
+
+#: ../../execution/queryvalidation.rst:51
+msgid "Disable Introspection"
+msgstr "禁用自省功能"
+
+#: ../../execution/queryvalidation.rst:52
+msgid ""
+"the disable introspection validation rule ensures that your schema cannot"
+" be introspected. This is a useful security measure in production "
+"environments."
+msgstr ""
+"disable introspection验证规则确保你的模式(schema)不能被自省。这在生产环境中是一个有用的安全措施。"
+
+#: ../../execution/queryvalidation.rst:58
+msgid "Here is how you would disable introspection for your schema."
+msgstr "以下是你如何禁用模式的自省功能。"
+
+#: ../../execution/queryvalidation.rst:84
+msgid "Implementing custom validators"
+msgstr "实现自定义验证器"
+
+#: ../../execution/queryvalidation.rst:85
+msgid ""
+"All custom query validators should extend the `ValidationRule "
+"<https://github.com/graphql-python/graphql-"
+"core/blob/v3.0.5/src/graphql/validation/rules/__init__.py#L37>`_ base "
+"class importable from the graphql.validation.rules module. Query "
+"validators are visitor classes. They are instantiated at the time of "
+"query validation with one required argument (context: "
+"ASTValidationContext). In order to perform validation, your validator "
+"class should define one or more of enter_* and leave_* methods. For "
+"possible enter/leave items as well as details on function documentation, "
+"please see contents of the visitor module. To make validation fail, you "
+"should call validator's report_error method with the instance of "
+"GraphQLError describing failure reason. Here is an example query "
+"validator that visits field definitions in GraphQL query and fails query "
+"validation if any of those fields are blacklisted:"
+msgstr ""
+"所有的自定义查询验证器都应该"
+"扩展 `ValidationRule <https://github.com/graphql-python/graphql-"
+"core/blob/v3.0.5/src/graphql/validation/rules/__init__.py#L37>`_ 基类，"
+"可从graphql.validation.rules模块导入。查询验证器是访问者类。它们在查询验证时被实例化，"
+"有一个必要的参数（context：ASTValidationContext）。为了进行验证，"
+"你的验证器类应该定义一个或多个 enter_* 和 leave_* 方法。关于可能的进入/离开项目以及"
+"功能文档的细节，请参见访问者模块的内容。要使验证失败，你应该调用"
+"验证器的 report_error 方法，用 GraphQLError 的实例来描述失败的原因。"
+"下面是一个查询验证器的例子，它访问GraphQL查询中的字段定义，如果这些字段被列入黑名单，则查询验证失败:"

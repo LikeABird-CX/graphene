@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Graphene 2016
+# This file is distributed under the same license as the Graphene package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Graphene 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-02 11:47+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../relay/connection.rst:2
+msgid "Connection"
+msgstr "连接(Connection)"
+
+#: ../../relay/connection.rst:4
+msgid ""
+"A connection is a vitaminized version of a List that provides ways of "
+"slicing and paginating through it. The way you create Connection types in"
+" ``graphene`` is using ``relay.Connection`` and "
+"``relay.ConnectionField``."
+msgstr ""
+"连接(connection)是List的维生素化版本，它提供了在List中进行切分和分页的方法。"
+"在 ``graphene`` 中创建连接(Connection)类型的方法是使用 ``relay.Connection`` 和 ``relay.ConnectionField`` 。"
+
+#: ../../relay/connection.rst:9
+msgid "Quick example"
+msgstr "快速示例"
+
+#: ../../relay/connection.rst:11
+msgid ""
+"If we want to create a custom Connection on a given node, we have to "
+"subclass the ``Connection`` class."
+msgstr "如果我们想在一个给定的节点上创建一个自定义的连接(Connection)，我们必须子类化 ``Connection`` 类。"
+
+#: ../../relay/connection.rst:14
+msgid ""
+"In the following example, ``extra`` will be an extra field in the "
+"connection, and ``other`` an extra field in the Connection Edge."
+msgstr ""
+"在下面的例子中， ``extra`` 将是连接中的一个额外字段， ``other`` 是"
+"连接边缘(Connection Edge)的一个额外字段。"
+
+#: ../../relay/connection.rst:28
+msgid ""
+"The ``ShipConnection`` connection class, will have automatically a "
+"``pageInfo`` field, and a ``edges`` field (which is a list of "
+"``ShipConnection.Edge``). This ``Edge`` will have a ``node`` field "
+"linking to the specified node (in ``ShipConnection.Meta``) and the field "
+"``other`` that we defined in the class."
+msgstr ""
+"``ShipConnection`` 连接类，将自动有一个 ``pageInfo`` 字段和一个 ``edges`` 字段"
+"（这是一个 ``ShipConnection.Edge`` 的列表）。这个 ``Edge`` 将有一个 ``node`` 字段"
+"链接到指定的节点（在 ``ShipConnection.Meta`` 中）和我们在该类中定义的 ``other`` 字段。"
+
+#: ../../relay/connection.rst:34
+msgid "Connection Field"
+msgstr "连接(Connection)字段"
+
+#: ../../relay/connection.rst:35
+msgid ""
+"You can create connection fields in any Connection, in case any "
+"ObjectType that implements ``Node`` will have a default Connection."
+msgstr ""
+"你可以在任何连接(Connection)中创建连接字段(connection fields)，"
+"以防任何实现 ``Node`` 的ObjectType都有一个默认的连接(Connection)。"
+
