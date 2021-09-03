@@ -1,0 +1,243 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Graphene 2016
+# This file is distributed under the same license as the Graphene package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Graphene 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-02 11:47+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../types/scalars.rst:4
+msgid "Scalars"
+msgstr "标量(Scalars)"
+
+#: ../../types/scalars.rst:6
+msgid ""
+"Scalar types represent concrete values at the leaves of a query. There "
+"are several built in types that Graphene provides out of the box which "
+"represent common values in Python. You can also create your own Scalar "
+"types to better express values that you might have in your data model."
+msgstr ""
+"标量类型(Scalar types)在查询的叶子上表示具体的值。Graphene开箱即提供了几种内置的类型，"
+"表示Python中的常见值。你也可以创建你自己的Scalar类型来更好地表达你的数据模型中可能有的值。"
+
+#: ../../types/scalars.rst:11
+msgid "All Scalar types accept the following arguments. All are optional:"
+msgstr "所有的Scalar类型都接受以下参数。所有参数都是可选的:"
+
+#: ../../types/scalars.rst:13
+msgid "``name``: *string*"
+msgstr ""
+
+#: ../../types/scalars.rst:15
+msgid "Override the name of the Field."
+msgstr "覆盖字段的名称"
+
+#: ../../types/scalars.rst:17
+msgid "``description``: *string*"
+msgstr ""
+
+#: ../../types/scalars.rst:19
+msgid "A description of the type to show in the GraphiQL browser."
+msgstr "在GraphiQL浏览器中显示该类型的描述"
+
+#: ../../types/scalars.rst:21
+msgid "``required``: *boolean*"
+msgstr ""
+
+#: ../../types/scalars.rst:23
+msgid ""
+"If ``True``, the server will enforce a value for this field. See `NonNull"
+" <../list-and-nonnull.html#nonnull>`_. Default is ``False``."
+msgstr ""
+"如果 ``True`` ，服务器将为这个字段强制执行一个值。参见 `NonNull <../list-and-nonnull.html#nonnull>`_ 。"
+"默认为 ``False`` 。"
+
+#: ../../types/scalars.rst:25
+msgid "``deprecation_reason``: *string*"
+msgstr ""
+
+#: ../../types/scalars.rst:27
+msgid "Provide a deprecation reason for the Field."
+msgstr "为字段提供一个废弃的原因"
+
+#: ../../types/scalars.rst:29
+msgid "``default_value``: *any*"
+msgstr ""
+
+#: ../../types/scalars.rst:31
+msgid "Provide a default value for the Field."
+msgstr "为该字段提供一个默认值"
+
+#: ../../types/scalars.rst:36
+msgid "Built in scalars"
+msgstr "内置的标量(scalars)"
+
+#: ../../types/scalars.rst:38
+msgid ""
+"Graphene defines the following base Scalar Types that match the default "
+"`GraphQL types <https://graphql.org/learn/schema/#scalar-types>`_:"
+msgstr ""
+"Graphene定义了以下基本的Scalar类型，与默认的 `GraphQL类型 <https://graphql.org/learn/schema/#scalar-types>`_ 匹配。"
+
+#: ../../types/scalars.rst:41
+msgid "``graphene.String``"
+msgstr ""
+
+#: ../../types/scalars.rst:43
+msgid ""
+"Represents textual data, represented as UTF-8 character sequences. The "
+"String type is most often used by GraphQL to represent free-form human-"
+"readable text."
+msgstr ""
+"表示文本数据，表示为UTF-8字符集。字符串类型最常被GraphQL用来表示自由形式的人类可读文本。"
+
+#: ../../types/scalars.rst:48
+msgid "``graphene.Int``"
+msgstr ""
+
+#: ../../types/scalars.rst:50
+msgid ""
+"Represents non-fractional signed whole numeric values. Int is a signed "
+"32‐bit integer per the `GraphQL spec "
+"<https://facebook.github.io/graphql/June2018/#sec-Int>`_"
+msgstr ""
+"表示非小数的有符号整数值。根据 `GraphQL规范 <https://facebook.github.io/graphql/June2018/#sec-Int>`_ ，"
+"Int是一个有符号的32位整数。"
+
+#: ../../types/scalars.rst:55
+msgid "``graphene.Float``"
+msgstr ""
+
+#: ../../types/scalars.rst:57
+msgid ""
+"Represents signed double-precision fractional values as specified by "
+"`IEEE 754 <http://en.wikipedia.org/wiki/IEEE_floating_point>`_."
+msgstr ""
+"表示有符号的双精度小数值，由 `IEEE 754 <http://en.wikipedia.org/wiki/IEEE_floating_point>`_ 规定。"
+
+#: ../../types/scalars.rst:62
+msgid "``graphene.Boolean``"
+msgstr ""
+
+#: ../../types/scalars.rst:64
+msgid "Represents `true` or `false`."
+msgstr "表示 `true` or `false`."
+
+#: ../../types/scalars.rst:67
+msgid "``graphene.ID``"
+msgstr ""
+
+#: ../../types/scalars.rst:69
+msgid ""
+"Represents a unique identifier, often used to refetch an object or as key"
+" for a cache. The ID type appears in a JSON response as a String; "
+"however, it is not intended to be human-readable. When expected as an "
+"input type, any string (such as `\"4\"`) or integer (such as `4`) input "
+"value will be accepted as an ID."
+msgstr ""
+"表示一个唯一的标识符，通常用于重新获取一个对象或作为缓存的key。"
+"ID类型在JSON响应中显示为一个字符串；然而，它并不打算让人阅读。"
+"当作为输入类型时，任何字符串（如 `\"4\"` ）或整数（如 `4` ）的输入值将被接受为ID。"
+
+#: ../../types/scalars.rst:77
+msgid "Graphene also provides custom scalars for common values:"
+msgstr "Graphene还为常见的数值提供了自定义标量:"
+
+#: ../../types/scalars.rst:80
+msgid "``graphene.Date``"
+msgstr ""
+
+#: ../../types/scalars.rst:82
+msgid ""
+"Represents a Date value as specified by `iso8601 "
+"<https://en.wikipedia.org/wiki/ISO_8601>`_."
+msgstr ""
+"表示一个由 `iso8601 <https://en.wikipedia.org/wiki/ISO_8601>`_ 规定的日期值。"
+
+#: ../../types/scalars.rst:108
+msgid "``graphene.DateTime``"
+msgstr ""
+
+#: ../../types/scalars.rst:110
+msgid ""
+"Represents a DateTime value as specified by `iso8601 "
+"<https://en.wikipedia.org/wiki/ISO_8601>`_."
+msgstr ""
+"表示一个由 `iso8601 <https://en.wikipedia.org/wiki/ISO_8601>`_ 规定的DateTime值。"
+
+#: ../../types/scalars.rst:135
+msgid "``graphene.Time``"
+msgstr ""
+
+#: ../../types/scalars.rst:137
+msgid ""
+"Represents a Time value as specified by `iso8601 "
+"<https://en.wikipedia.org/wiki/ISO_8601>`_."
+msgstr "表示一个由 `iso8601 <https://en.wikipedia.org/wiki/ISO_8601>`_ 规定的DateTime值。"
+
+#: ../../types/scalars.rst:163
+msgid "``graphene.Decimal``"
+msgstr ""
+
+#: ../../types/scalars.rst:165
+msgid "Represents a Python Decimal value."
+msgstr "表示一个Python Decimal的数值。"
+
+#: ../../types/scalars.rst:190
+msgid "``graphene.JSONString``"
+msgstr ""
+
+#: ../../types/scalars.rst:192
+msgid "Represents a JSON string."
+msgstr "表示一个JSON字符串。"
+
+#: ../../types/scalars.rst:223
+msgid "``graphene.Base64``"
+msgstr ""
+
+#: ../../types/scalars.rst:225
+msgid "Represents a Base64 encoded string."
+msgstr "表示一个Base64编码的字符串。"
+
+#: ../../types/scalars.rst:254
+msgid "Custom scalars"
+msgstr "自定义标量(scalars)"
+
+#: ../../types/scalars.rst:256
+msgid ""
+"You can create custom scalars for your schema. The following is an "
+"example for creating a DateTime scalar:"
+msgstr "你可以为你的模式(schema)创建自定义标量(scalars)。下面是一个创建DateTime标量的例子。"
+
+#: ../../types/scalars.rst:283
+msgid "Mounting Scalars"
+msgstr "载入标量(Mounting Scalars)"
+
+#: ../../types/scalars.rst:285
+msgid ""
+"Scalars mounted in a ``ObjectType``, ``Interface`` or ``Mutation`` act as"
+" ``Field``\\ s."
+msgstr "载入(mounted)到 ``ObjectType`` 、 ``Interface`` 或 ``Mutation`` 中的标量(Scalars)可以作为 ``Field`` 。"
+
+#: ../../types/scalars.rst:298
+msgid ""
+"**Note:** when using the ``Field`` constructor directly, pass the type "
+"and not an instance."
+msgstr ""
+"**注意:** 当直接使用 ``Field`` 构造函数时，要传递类型(type)而不是实例。"
+
+#: ../../types/scalars.rst:301
+msgid "Types mounted in a ``Field`` act as ``Argument``\\ s."
+msgstr "载入(mounted)到 ``Field`` 中的类型(Types)可以作为 ``Argument`` 。"
+

@@ -1,0 +1,144 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Graphene 2016
+# This file is distributed under the same license as the Graphene package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Graphene 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-02 11:47+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../types/schema.rst:2
+msgid "Schema"
+msgstr "模式(Schema)"
+
+#: ../../types/schema.rst:4
+msgid ""
+"A GraphQL **Schema** defines the types and relationships between "
+"**Fields** in your API."
+msgstr ""
+"GraphQL **Schema** 定义了你的API中 **Fields** 的类型(types)和关系。"
+
+#: ../../types/schema.rst:6
+msgid ""
+"A Schema is created by supplying the root :ref:`ObjectType` of each "
+"operation, query (mandatory), mutation and subscription."
+msgstr ""
+"模式(Schema)是通过提供查询(强制)、突变(mutaion)和订阅(subscription)的"
+"每一个对根(root) :ref:`ObjectType` 的操作创建的."
+
+#: ../../types/schema.rst:8
+msgid ""
+"Schema will collect all type definitions related to the root operations "
+"and then supply them to the validator and executor."
+msgstr ""
+"模式(Schema)将收集所有与根操作相关的类型定义，然后将它们提供给验证器(validator)和执行器(executor)。"
+
+#: ../../types/schema.rst:18
+msgid ""
+"A Root Query is just a special :ref:`ObjectType` that defines the fields "
+"that are the entrypoint for your API. Root Mutation and Root Subscription"
+" are similar to Root Query, but for different operation types:"
+msgstr ""
+"根查询(Root Query)只是一个特殊的 :ref:`ObjectType` ，它定义了作为你的API的入口的字段。"
+"根突变(Root Mutation)和根订阅(Root Subscription)与根查询(Root Query)类似，但用于不同的操作类型:"
+
+#: ../../types/schema.rst:20
+msgid "Query fetches data"
+msgstr "查询获取数据"
+
+#: ../../types/schema.rst:21
+msgid "Mutation changes data and retrieves the changes"
+msgstr "突变改变了数据，并检索出改变的数据"
+
+#: ../../types/schema.rst:22
+msgid "Subscription sends changes to clients in real-time"
+msgstr "订阅实时向客户发送更改"
+
+#: ../../types/schema.rst:24
+msgid ""
+"Review the `GraphQL documentation on Schema`_ for a brief overview of "
+"fields, schema and operations."
+msgstr ""
+"查看 `GraphQL documentation on Schema`_ ，以了解字段、模式(schema)和操作的简要概述。"
+
+#: ../../types/schema.rst:30
+msgid "Querying"
+msgstr "查询(Querying)"
+
+#: ../../types/schema.rst:32
+msgid ""
+"To query a schema, call the ``execute`` method on it. See "
+":ref:`SchemaExecute` for more details."
+msgstr ""
+"要查询一个模式(schema)，需要对其调用 ``execute`` 方法。更多细节见 :ref:`SchemaExecute` 。"
+
+#: ../../types/schema.rst:41
+msgid "Types"
+msgstr "类型(Types)"
+
+#: ../../types/schema.rst:43
+msgid ""
+"There are some cases where the schema cannot access all of the types that"
+" we plan to have. For example, when a field returns an ``Interface``, the"
+" schema doesn't know about any of the implementations."
+msgstr ""
+"在某些情况下，模式(schema)不能访问我们计划中的所有类型(types)。"
+"例如，当一个字段返回一个 ``Interface`` 时，模式(schema)不知道任何的实现。"
+
+#: ../../types/schema.rst:47
+msgid ""
+"In this case, we need to use the ``types`` argument when creating the "
+"Schema."
+msgstr ""
+"在这种情况下，我们需要在创建模式(Schema)时使用 ``types`` 参数。"
+
+#: ../../types/schema.rst:60
+msgid "Auto camelCase field names"
+msgstr "自动驼峰式的字段名"
+
+#: ../../types/schema.rst:62
+msgid ""
+"By default all field and argument names (that are not explicitly set with"
+" the ``name`` arg) will be converted from ``snake_case`` to ``camelCase``"
+" (as the API is usually being consumed by a js/mobile client)"
+msgstr ""
+"默认情况下，所有字段和参数名称（没有明确设置 ``name`` 参数）将从 ``snake_case`` 转换为 ``camelCase`` "
+"（因为API通常由js/mobile客户端消费）。"
+
+#: ../../types/schema.rst:66
+msgid "For example with the ObjectType"
+msgstr "例如，对于ObjectType"
+
+#: ../../types/schema.rst:74
+msgid "the ``last_name`` field name is converted to ``lastName``."
+msgstr "``last_name`` 字段名被转换为 ``lastName`` 。"
+
+#: ../../types/schema.rst:76
+msgid ""
+"In case you don't want to apply this transformation, provide a ``name`` "
+"argument to the field constructor. ``other_name`` converts to "
+"``_other_Name`` (without further transformations)."
+msgstr ""
+"如果你不想应用这种转换，请向字段构造函数提供一个 ``name`` 参数。 "
+" ``other_name`` 转换为 ``_other_Name`` （无需进一步转换）。"
+
+#: ../../types/schema.rst:79
+msgid "Your query should look like"
+msgstr "你的查询应该看起来像这样"
+
+#: ../../types/schema.rst:89
+msgid ""
+"To disable this behavior, set the ``auto_camelcase`` to ``False`` upon "
+"schema instantiation."
+msgstr "要禁用这种行为，请在模式实例化时将 ``auto_camelcase`` 设置为 ``False`` 。"
+
