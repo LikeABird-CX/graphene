@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Graphene 2016
+# This file is distributed under the same license as the Graphene package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Graphene 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-02 11:47+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../types/enums.rst:2
+msgid "Enums"
+msgstr "枚举(Enums)"
+
+#: ../../types/enums.rst:4
+msgid ""
+"An ``Enum`` is a special ``GraphQL`` type that represents a set of "
+"symbolic names (members) bound to unique, constant values."
+msgstr ""
+"一个 ``Enum`` 是一个特殊的 ``GraphQL`` 类型，表示一组符号名称（成员）与唯一的常量值绑定。"
+
+#: ../../types/enums.rst:8
+msgid "Definition"
+msgstr "定义"
+
+#: ../../types/enums.rst:10
+msgid "You can create an ``Enum`` using classes:"
+msgstr "你可以使用类来创建一个 ``Enum`` :"
+
+#: ../../types/enums.rst:21
+msgid "But also using instances of Enum:"
+msgstr "但也可以使用Enum的实例:"
+
+#: ../../types/enums.rst:28
+msgid "Value descriptions"
+msgstr "值描述"
+
+#: ../../types/enums.rst:30
+msgid ""
+"It's possible to add a description to an enum value, for that the enum "
+"value needs to have the ``description`` property on it."
+msgstr "可以为一个枚举值添加描述，为此, 枚举值需要有 ``description`` 属性。"
+
+#: ../../types/enums.rst:48
+msgid "Usage with Python Enums"
+msgstr "与Python枚举的使用方法"
+
+#: ../../types/enums.rst:50
+msgid ""
+"In case the Enums are already defined it's possible to reuse them using "
+"the ``Enum.from_enum`` function."
+msgstr "如果已经定义了枚举，可以使用 ``Enum.from_enum`` 函数重新使用它们。"
+
+#: ../../types/enums.rst:57
+msgid ""
+"``Enum.from_enum`` supports a ``description`` and ``deprecation_reason`` "
+"lambdas as input so you can add description etc. to your enum without "
+"changing the original:"
+msgstr ""
+"``Enum.from_enum`` 支持 ``description`` 和 ``deprecation_reason`` lambdas 作为输入，"
+"所以你可以在不改变原始内容的情况下为枚举添加描述等等:"
+
+#: ../../types/enums.rst:69
+msgid "Notes"
+msgstr "注意事项"
+
+#: ../../types/enums.rst:71
+msgid ""
+"``graphene.Enum`` uses |enum.Enum|_ internally (or a backport if that's "
+"not available) and can be used in a similar way, with the exception of "
+"member getters."
+msgstr ""
+"``graphene.Enum`` 内部使用 |enum.Enum|_ （如果没有的话，也可以使用一个backport），"
+"可以以类似的方式使用，但getter获取成员的用法除外。"
+
+#: ../../types/enums.rst:75
+msgid ""
+"In the Python ``Enum`` implementation you can access a member by initing "
+"the Enum."
+msgstr ""
+"在Python ``Enum`` 实现中，你可以通过初始化Enum来访问一个成员。"
+
+#: ../../types/enums.rst:89
+msgid ""
+"However, in Graphene ``Enum`` you need to call get to have the same "
+"effect:"
+msgstr "然而，在Graphene ``Enum`` 中，你需要调用get来实现同样的效果:"
+

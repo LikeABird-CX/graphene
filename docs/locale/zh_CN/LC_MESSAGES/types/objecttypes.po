@@ -1,0 +1,473 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Graphene 2016
+# This file is distributed under the same license as the Graphene package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Graphene 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-02 11:47+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../types/objecttypes.rst:4
+msgid "ObjectType"
+msgstr "对象类型(ObjectType)"
+
+#: ../../types/objecttypes.rst:6
+msgid ""
+"A Graphene *ObjectType* is the building block used to define the "
+"relationship between **Fields** in your **Schema** and how their data is "
+"retrieved."
+msgstr ""
+"Graphene *ObjectType* 是用来定义你的 **Schema** 中的 **Fields** 之间的关系"
+"以及如何检索它们的数据的构建块。"
+
+#: ../../types/objecttypes.rst:8
+msgid "The basics:"
+msgstr "基础知识:"
+
+#: ../../types/objecttypes.rst:10
+msgid ""
+"Each ObjectType is a Python class that inherits from "
+"``graphene.ObjectType``."
+msgstr "每个ObjectType都是一个继承自 ``graphene.ObjectType`` 的Python类"
+
+#: ../../types/objecttypes.rst:11
+msgid "Each attribute of the ObjectType represents a ``Field``."
+msgstr "ObjectType的每个属性表示一个 ``Field`` "
+
+#: ../../types/objecttypes.rst:12
+msgid ""
+"Each ``Field`` has a :ref:`resolver method<Resolvers>` to fetch data (or "
+":ref:`DefaultResolver`)."
+msgstr "每个 ``Field`` 都有一个 :ref:`resolver method<Resolvers>` 来获取数据（或 :ref:`DefaultResolver` ）"
+
+#: ../../types/objecttypes.rst:15
+msgid "Quick example"
+msgstr "快速示例"
+
+#: ../../types/objecttypes.rst:17
+msgid "This example model defines a Person, with a first and a last name:"
+msgstr "这个例子模型定义了一个Person，有一个名字和一个姓氏:"
+
+#: ../../types/objecttypes.rst:31
+msgid ""
+"This *ObjectType* defines the field **first\\_name**, **last\\_name**, "
+"and **full\\_name**. Each field is specified as a class attribute, and "
+"each attribute maps to a Field. Data is fetched by our "
+"``resolve_full_name`` :ref:`resolver method<Resolvers>` for ``full_name``"
+" field and the :ref:`DefaultResolver` for other fields."
+msgstr ""
+"这个 *ObjectType* 定义了字段 **first\_name** 、 **last\_name** 和 **full\_name** 。"
+"每个字段都被指定为一个类属性，每个属性都映射到一个字段。数据由我们的 ``resolve_full_name`` "
+" :ref:`resolver method<Resolvers>` 来获取 ``full_name`` 字段，而其他字段"
+"则由 :ref:`DefaultResolver` 来获取。"
+
+#: ../../types/objecttypes.rst:33
+msgid "The above ``Person`` ObjectType has the following schema representation:"
+msgstr "上述 ``Person`` 的对象类型有以下模式表示:"
+
+#: ../../types/objecttypes.rst:46
+msgid "Resolvers"
+msgstr "解析器(Resolvers)"
+
+#: ../../types/objecttypes.rst:48
+msgid ""
+"A **Resolver** is a method that helps us answer **Queries** by fetching "
+"data for a **Field** in our **Schema**."
+msgstr ""
+"一个 **解析器(Resolvers)** 是一个方法，它帮助我们回答 **查询(Queries)** ，"
+"在我们的 **Schema** 中为 **Field** 获取数据。"
+
+#: ../../types/objecttypes.rst:50
+msgid ""
+"Resolvers are lazily executed, so if a field is not included in a query, "
+"its resolver will not be executed."
+msgstr ""
+"解析器(Resolvers)是惰性地执行的，所以如果一个字段没有被包含在查询中，它的解析器(resolver)将不会被执行。"
+
+#: ../../types/objecttypes.rst:52
+msgid ""
+"Each field on an *ObjectType* in Graphene should have a corresponding "
+"resolver method to fetch data. This resolver method should match the "
+"field name. For example, in the ``Person`` type above, the ``full_name`` "
+"field is resolved by the method ``resolve_full_name``."
+msgstr ""
+"Graphene中 *ObjectType* 上的每个字段都应该有一个相应的解析器方法来获取数据。"
+"这个解析器方法应该与字段名匹配。例如，在上面的 ``Person`` 类型中， ``full_name`` "
+"字段是由 ``resolve_full_name`` 方法解析。"
+
+#: ../../types/objecttypes.rst:54
+msgid "Each resolver method takes the parameters:"
+msgstr "每个解析器方法都接受参数:"
+
+#: ../../types/objecttypes.rst:56
+msgid ":ref:`ResolverParamParent` for the value object use to resolve most fields"
+msgstr ""
+":ref:`ResolverParamParent` 用于解析大多数字段的值对象"
+
+#: ../../types/objecttypes.rst:57
+msgid ""
+":ref:`ResolverParamInfo` for query and schema meta information and per-"
+"request context"
+msgstr ":ref:`ResolverParamInfo` 用于查询和模式(schema)元信息以及每个请求的上下文"
+
+#: ../../types/objecttypes.rst:58
+msgid ":ref:`ResolverParamGraphQLArguments` as defined on the **Field**."
+msgstr ":ref:`ResolverParamGraphQLArguments` ， 如同在 **Field** 所定义的那样。"
+
+#: ../../types/objecttypes.rst:63
+msgid "Resolver Parameters"
+msgstr "解析器(Resolver)参数"
+
+#: ../../types/objecttypes.rst:68
+msgid "Parent Value Object (*parent*)"
+msgstr "父值对象(Parent Value Object)。"
+
+#: ../../types/objecttypes.rst:70
+msgid ""
+"This parameter is typically used to derive the values for most fields on "
+"an *ObjectType*."
+msgstr ""
+"这个参数通常用于获得 *ObjectType* 上大多数字段的值。"
+
+#: ../../types/objecttypes.rst:72
+msgid ""
+"The first parameter of a resolver method (*parent*) is the value object "
+"returned from the resolver of the parent field. If there is no parent "
+"field, such as a root Query field, then the value for *parent* is set to "
+"the ``root_value`` configured while executing the query (default "
+"``None``). See :ref:`SchemaExecute` for more details on executing "
+"queries."
+msgstr ""
+"解析器方法的第一个参数( *parent* )是由父字段的解析器返回的值对象。如果没有父字段，"
+"例如根查询(root Query)字段，那么 *parent* 的值将被设置为执行查询时配置的 ``root_value`` "
+"（默认 ``None`` ）。参见 :ref:`SchemaExecute` 以了解更多关于执行查询的细节。"
+
+#: ../../types/objecttypes.rst:75
+msgid "Resolver example"
+msgstr "解析器(Resolver)示例"
+
+#: ../../types/objecttypes.rst:77
+msgid "If we have a schema with Person type and one field on the root query."
+msgstr "如果我们有一个Person类型的模式(schema)，根查询上有一个字段:"
+
+#: ../../types/objecttypes.rst:96
+msgid "When we execute a query against that schema."
+msgstr "当我们对该模式(schema)执行查询时，我们就会发现:"
+
+#: ../../types/objecttypes.rst:107
+msgid "Then we go through the following steps to resolve this query:"
+msgstr "然后我们通过以下步骤来解决这个疑问:"
+
+#: ../../types/objecttypes.rst:109
+msgid "``parent`` is set with the root_value from query execution (None)."
+msgstr "``parent`` 被设置为查询执行中的root_value（None）。"
+
+#: ../../types/objecttypes.rst:110
+msgid ""
+"``Query.resolve_me`` called with ``parent`` None which returns a value "
+"object ``Person(\"Luke\", \"Skywalker\")``."
+msgstr "``Query.resolve_me`` 被调用时, ``parent`` 为None，"
+"返回一个值对象(value object) ``Person(\"Luke\", \"Skywalker\")`` 。"
+
+#: ../../types/objecttypes.rst:111
+msgid ""
+"This value object is then used as ``parent`` while calling "
+"``Person.resolve_full_name`` to resolve the scalar String value \"Luke "
+"Skywalker\"."
+msgstr ""
+"在调用 ``Person.resolve_full_name`` 时，这个值对象被用作 ``parent`` ，以"
+"解析标量(scalar)字符串值\"Luke Skywalker\"。"
+
+#: ../../types/objecttypes.rst:112
+msgid "The scalar value is serialized and sent back in the query response."
+msgstr "标量(scalar)值被序列化并在查询响应中被发送。"
+
+#: ../../types/objecttypes.rst:114
+msgid ""
+"Each resolver returns the next :ref:`ResolverParamParent` to be used in "
+"executing the following resolver in the chain. If the Field is a Scalar "
+"type, that value will be serialized and sent in the **Response**. "
+"Otherwise, while resolving Compound types like *ObjectType*, the value be"
+" passed forward as the next :ref:`ResolverParamParent`."
+msgstr ""
+"每个解析器(resolver)都会返回下一个 :ref:`ResolverParamParent` ，以用于执行链中的下一个解析器。"
+"如果字段是一个Scalar类型，该值将被序列化并在 **Response** 中发送。否则，在解析像 *ObjectType* 这样的"
+"复合类型时，该值将作为下一个 :ref:`ResolverParamParent` 向前传递。"
+
+#: ../../types/objecttypes.rst:117
+msgid "Naming convention"
+msgstr "命名惯例"
+
+#: ../../types/objecttypes.rst:119
+msgid ""
+"This :ref:`ResolverParamParent` is sometimes named ``obj``, ``parent``, "
+"or ``source`` in other GraphQL documentation. It can also be named after "
+"the value object being resolved (ex. ``root`` for a root Query or "
+"Mutation, and ``person`` for a Person value object). Sometimes this "
+"argument will be named ``self`` in Graphene code, but this can be "
+"misleading due to :ref:`ResolverImplicitStaticMethod` while executing "
+"queries in Graphene."
+msgstr ""
+"这个 :ref:`ResolverParamParent` 有时被命名为 ``obj`` ， ``parent`` ，或 ``source`` ，"
+"在其他GraphQL文档中。它也可以用被解析的值对象来命名（例如， ``root`` 代表根查询或突变，"
+" ``person`` 代表一个Person的值对象）。有时这个参数在Graphene代码中会被命名为 ``self`` ，"
+"但这可能会被误导，因为 :ref:`ResolverImplicitStaticMethod` 在Graphene中执行查询时:"
+
+#: ../../types/objecttypes.rst:124
+msgid "GraphQL Execution Info (*info*)"
+msgstr "GraphQL执行信息( *info* )"
+
+#: ../../types/objecttypes.rst:126
+msgid "The second parameter provides two things:"
+msgstr "第二个参数提供了两方面的内容:"
+
+#: ../../types/objecttypes.rst:128
+msgid ""
+"reference to meta information about the execution of the current GraphQL "
+"Query (fields, schema, parsed query, etc.)"
+msgstr ""
+"对当前GraphQL查询执行的元信息的引用(字段、模式、解析的查询等)"
+
+#: ../../types/objecttypes.rst:129
+msgid ""
+"access to per-request ``context`` which can be used to store user "
+"authentication, data loader instances or anything else useful for "
+"resolving the query."
+msgstr ""
+"访问每个请求的 ``context`` ，可用于存储用户认证、数据加载器(DataLoader)实例"
+"或其他对解析查询有用的东西。"
+
+#: ../../types/objecttypes.rst:131
+msgid ""
+"Only context will be required for most applications. See "
+":ref:`SchemaExecuteContext` for more information about setting context."
+msgstr ""
+"对于大多数应用来说，只需要上下文就可以了。参见 :ref:`SchemaExecuteContext` 以了解更多关于设置上下文的信息。"
+
+#: ../../types/objecttypes.rst:136
+msgid "GraphQL Arguments (*\\*\\*kwargs*)"
+msgstr "GraphQL参数(*\\*\\*kwargs*)"
+
+#: ../../types/objecttypes.rst:138
+msgid ""
+"Any arguments that a field defines gets passed to the resolver function "
+"as keyword arguments. For example:"
+msgstr "一个字段定义的任何参数都会作为关键字参数传递给解析器函数。比如说:"
+
+#: ../../types/objecttypes.rst:151
+msgid "You can then execute the following query:"
+msgstr "然后，你可以执行以下查询:"
+
+#: ../../types/objecttypes.rst:162
+msgid ""
+"*Note:* There are several arguments to a field that are \"reserved\" by "
+"Graphene (see :ref:`fields-mounted-types`). You can still define an "
+"argument that clashes with one of these fields by using the ``args`` "
+"parameter like so:"
+msgstr ""
+"*注意:* 有几个字段的参数被Graphene称为\"保留\"（见 :ref:`fields-mounted-types` ）。"
+"你仍然可以通过使用 ``args`` 参数来定义一个与这些字段之一相冲突的参数，比如说。"
+
+#: ../../types/objecttypes.rst:179
+msgid "Convenience Features of Graphene Resolvers"
+msgstr "Graphene解析器方便的特点"
+
+#: ../../types/objecttypes.rst:184
+msgid "Implicit staticmethod"
+msgstr "隐式静态方法"
+
+#: ../../types/objecttypes.rst:186
+msgid ""
+"One surprising feature of Graphene is that all resolver methods are "
+"treated implicitly as staticmethods. This means that, unlike other "
+"methods in Python, the first argument of a resolver is *never* ``self`` "
+"while it is being executed by Graphene. Instead, the first argument is "
+"always :ref:`ResolverParamParent`.  In practice, this is very convenient "
+"as, in GraphQL, we are almost always more concerned with the using the "
+"parent value object to resolve queries than attributes on the Python "
+"object itself."
+msgstr ""
+"Graphene的一个令人惊讶的特点是，所有的解析器方法都被隐含地视为静态方法。"
+"这意味着，与Python中的其他方法不同，当它被Graphene执行时，解析器的第一个"
+"参数 *永远不会* 是 ``self`` 。相反，第一个参数总是 :ref:`ResolverParamParent` 。"
+"在实践中，这是非常方便的，因为在GraphQL中，我们几乎总是更关心使用父值对象来解析查询，"
+"而不是Python对象本身的属性。"
+
+#: ../../types/objecttypes.rst:188
+msgid "The two resolvers in this example are effectively the same."
+msgstr "这个例子中的两个解析器实际上是相同的。"
+
+#: ../../types/objecttypes.rst:215
+msgid ""
+"If you prefer your code to be more explicit, feel free to use "
+"``@staticmethod`` decorators. Otherwise, your code may be cleaner without"
+" them!"
+msgstr ""
+"如果你喜欢你的代码更明确，请随意使用 ``@staticmethod`` 装饰器。另外，没有它们，你的代码可能会更干净。"
+
+#: ../../types/objecttypes.rst:220
+msgid "Default Resolver"
+msgstr "默认解析器(Resolver)"
+
+#: ../../types/objecttypes.rst:222
+msgid ""
+"If a resolver method is not defined for a **Field** attribute on our "
+"*ObjectType*, Graphene supplies a default resolver."
+msgstr ""
+"如果没有为我们的 *ObjectType* 上的 **Field** 属性定义解析器方法，Graphene会提供一个默认的解析器。"
+
+#: ../../types/objecttypes.rst:224
+msgid ""
+"If the :ref:`ResolverParamParent` is a dictionary, the resolver will look"
+" for a dictionary key matching the field name. Otherwise, the resolver "
+"will get the attribute from the parent value object matching the field "
+"name."
+msgstr ""
+"如果 :ref:`ResolverParamParent` 是一个字典，解析器将寻找一个与字段名匹配的字典key。"
+"否则，解析器将从匹配字段名的父值对象中获取属性。"
+
+#: ../../types/objecttypes.rst:264
+msgid "Advanced"
+msgstr "高级"
+
+#: ../../types/objecttypes.rst:267
+msgid "GraphQL Argument defaults"
+msgstr "GraphQL参数的默认值"
+
+#: ../../types/objecttypes.rst:269
+msgid ""
+"If you define an argument for a field that is not required (and in a "
+"query execution it is not provided as an argument) it will not be passed "
+"to the resolver function at all. This is so that the developer can "
+"differentiate between a ``undefined`` value for an argument and an "
+"explicit ``null`` value."
+msgstr ""
+"如果你为一个字段定义了一个不需要的参数（在查询执行中，它没有被作为参数提供），"
+"它将根本不会被传递给解析器函数。这是为了让开发者能够区分一个参数的 ``undefined`` 值和一个明确的 ``null`` 值。"
+
+#: ../../types/objecttypes.rst:274
+msgid "For example, given this schema:"
+msgstr "例如，给定的这个模式(schema):"
+
+#: ../../types/objecttypes.rst:286
+msgid "And this query:"
+msgstr "还有这个查询:"
+
+#: ../../types/objecttypes.rst:294
+msgid "An error will be thrown:"
+msgstr "将会抛出一个错误:"
+
+#: ../../types/objecttypes.rst:300
+msgid ""
+"You can fix this error in several ways. Either by combining all keyword "
+"arguments into a dict:"
+msgstr ""
+"你可以用几种方法来解决这个错误。一是将所有的关键字参数合并成一个dict:"
+
+#: ../../types/objecttypes.rst:314
+msgid "Or by setting a default value for the keyword argument:"
+msgstr "或者通过为关键词参数设置默认值:"
+
+#: ../../types/objecttypes.rst:326
+msgid ""
+"One can also set a default value for an Argument in the GraphQL schema "
+"itself using Graphene!"
+msgstr ""
+"我们还可以使用Graphene！为GraphQL模式本身中的Argument设置一个默认值。"
+
+#: ../../types/objecttypes.rst:342
+msgid "Resolvers outside the class"
+msgstr "类外的解析器(Resolvers)"
+
+#: ../../types/objecttypes.rst:344
+msgid "A field can use a custom resolver from outside the class:"
+msgstr "一个字段可以使用类之外的自定义解析器:"
+
+#: ../../types/objecttypes.rst:360
+msgid "Instances as value objects"
+msgstr "作为值对象的实例"
+
+#: ../../types/objecttypes.rst:362
+msgid ""
+"Graphene ``ObjectType``\\ s can act as value objects too. So with the "
+"previous example you could use ``Person`` to capture data for each of the"
+" *ObjectType*'s fields."
+msgstr ""
+"Graphene的 ``ObjectType`` 也可以作为值对象(value objects)。所以在前面的例子中，"
+"你可以使用 ``Person`` 来获取 *ObjectType* 的每个字段的数据。"
+
+#: ../../types/objecttypes.rst:373
+msgid "Field camelcasing"
+msgstr "字段的驼峰式"
+
+#: ../../types/objecttypes.rst:375
+msgid ""
+"Graphene automatically camelcases fields on *ObjectType* from "
+"``field_name`` to ``fieldName`` to conform with GraphQL standards. See "
+":ref:`SchemaAutoCamelCase` for more information."
+msgstr ""
+"Graphene自动将 *ObjectType* 上的字段从``field_name`` 改为 ``fieldName`` ，"
+"以符合GraphQL标准。更多信息请参见 :ref:`SchemaAutoCamelCase` 。"
+
+#: ../../types/objecttypes.rst:378
+msgid "*ObjectType* Configuration - Meta class"
+msgstr "*ObjectType* 配置 - 元类"
+
+#: ../../types/objecttypes.rst:380
+msgid "Graphene uses a Meta inner class on *ObjectType* to set different options."
+msgstr "Graphene在 *ObjectType* 上使用一个Meta内部类来设置不同的选项。"
+
+#: ../../types/objecttypes.rst:383
+msgid "GraphQL type name"
+msgstr "GraphQL类型名称"
+
+#: ../../types/objecttypes.rst:385
+msgid ""
+"By default the type name in the GraphQL schema will be the same as the "
+"class name that defines the ``ObjectType``. This can be changed by "
+"setting the ``name`` property on the ``Meta`` class:"
+msgstr ""
+"默认情况下，GraphQL模式(schema)中的类型名称将与定义 ``ObjectType`` 的类名称相同。"
+"这可以通过设置 ``Meta``类的 ``name`` 属性来改变:"
+
+#: ../../types/objecttypes.rst:398
+msgid "GraphQL Description"
+msgstr "GraphQL说明"
+
+#: ../../types/objecttypes.rst:400
+msgid ""
+"The schema description of an *ObjectType* can be set as a docstring on "
+"the Python object or on the Meta inner class."
+msgstr ""
+"一个 *ObjectType* 的模式(schema)说明可以被设置为Python对象或Meta内类上的一个文档字符串(docstring)。"
+
+#: ../../types/objecttypes.rst:412
+msgid "Interfaces & Possible Types"
+msgstr "接口(Interfaces) & 可能的类型(Types)"
+
+#: ../../types/objecttypes.rst:414
+msgid ""
+"Setting ``interfaces`` in Meta inner class specifies the GraphQL "
+"Interfaces that this Object implements."
+msgstr "在Meta内部类中设置 ``interfaces`` ，指定该对象实现的GraphQL接口。"
+
+#: ../../types/objecttypes.rst:416
+msgid ""
+"Providing ``possible_types`` helps Graphene resolve ambiguous types such "
+"as interfaces or Unions."
+msgstr "提供 ``possible_types`` 有助于Graphene解析模糊的类型，如接口(interfaces)或Unions。"
+
+#: ../../types/objecttypes.rst:418
+msgid "See :ref:`Interfaces` for more information."
+msgstr "更多信息请参见 :ref:`Interfaces` 。"
+

@@ -1,0 +1,127 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Graphene 2016
+# This file is distributed under the same license as the Graphene package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Graphene 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-02 11:47+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../relay/nodes.rst:2
+msgid "Nodes"
+msgstr "节点(Nodes)"
+
+#: ../../relay/nodes.rst:4
+msgid ""
+"A ``Node`` is an Interface provided by ``graphene.relay`` that contains a"
+" single field ``id`` (which is a ``ID!``). Any object that inherits from "
+"it has to implement a ``get_node`` method for retrieving a ``Node`` by an"
+" *id*."
+msgstr ""
+"``Node`` 是一个由 ``graphene.relay`` 提供的接口，它包含一个字段 ``id`` （这是一个 ``ID！`` ）。"
+"任何继承自它的对象都必须实现一个 ``get_node`` 方法，以便通过一个 *id* 检索一个 ``Node`` 。"
+
+#: ../../relay/nodes.rst:11
+msgid "Quick example"
+msgstr "快速示例"
+
+#: ../../relay/nodes.rst:13
+msgid "Example usage (taken from the `Starwars Relay example`_):"
+msgstr "使用示例（取自 `Starwars Relay范例`_ ）:"
+
+#: ../../relay/nodes.rst:28
+msgid ""
+"The ``id`` returned by the ``Ship`` type when you query it will be a "
+"scalar which contains enough info for the server to know its type and its"
+" id."
+msgstr ""
+"当你查询(query)时， ``Ship`` 类型返回的 ``id`` 将是一个标量(scalar)，"
+"它包含足够的信息让服务器知道它的类型和它的id。"
+
+#: ../../relay/nodes.rst:32
+msgid ""
+"For example, the instance ``Ship(id=1)`` will return ``U2hpcDox`` as the "
+"id when you query it (which is the base64 encoding of ``Ship:1``), and "
+"which could be useful later if we want to query a node by its id."
+msgstr ""
+"例如，实例 ``Ship(id=1)`` 在你查询时将返回 ``U2hpcDox`` 作为id（这是 ``Ship:1`` 的base64编码），"
+"以后如果我们想通过id查询一个节点，这可能很有用。"
+
+#: ../../relay/nodes.rst:38
+msgid "Custom Nodes"
+msgstr "自定义节点(Nodes)"
+
+#: ../../relay/nodes.rst:40
+msgid ""
+"You can use the predefined ``relay.Node`` or you can subclass it, "
+"defining custom ways of how a node id is encoded (using the "
+"``to_global_id`` method in the class) or how we can retrieve a Node given"
+" a encoded id (with the ``get_node_from_global_id`` method)."
+msgstr ""
+"你可以使用预定义的 ``relay.Node`` ，也可以对其进行子类化，定义"
+"自定义节点ID的编码方式（使用类中的 ``to_global_id`` 方法），"
+"或者我们如何在给定的编码ID下检索一个节点(Node)（使用 ``get_node_from_global_id`` 方法）。"
+
+#: ../../relay/nodes.rst:44
+msgid "Example of a custom node:"
+msgstr "一个自定义节点(node)的例子:"
+
+#: ../../relay/nodes.rst:71
+msgid ""
+"The ``get_node_from_global_id`` method will be called when "
+"``CustomNode.Field`` is resolved."
+msgstr "当 ``get_node_from_global_id`` 被解析(resolved)时， ``CustomNode.Field`` 方法将被调用。"
+
+#: ../../relay/nodes.rst:75
+msgid "Accessing node types"
+msgstr "访问节点类型(node types)"
+
+#: ../../relay/nodes.rst:77
+msgid ""
+"If we want to retrieve node instances from a ``global_id`` (scalar that "
+"identifies an instance by it's type name and id), we can simply do "
+"``Node.get_node_from_global_id(info, global_id)``."
+msgstr ""
+"如果我们想从 ``global_id`` （通过类型(type)名称和id识别实例的标量(scalar)）检索节点实例，"
+"我们可以简单地进行 ``Node.get_node_from_global_id(info, global_id)`` 。"
+
+#: ../../relay/nodes.rst:80
+msgid ""
+"In the case we want to restrict the instance retrieval to a specific "
+"type, we can do: ``Node.get_node_from_global_id(info, global_id, "
+"only_type=Ship)``. This will raise an error if the ``global_id`` doesn't "
+"correspond to a Ship type."
+msgstr ""
+"在我们想将实例检索限制在特定类型的情况下，我们可以这样做。 ``Node.get_node_from_global_id(info, global_id, only_type=Ship)`` 。"
+"如果 ``global_id`` 不对应于Ship类型(type)，这将引发一个错误。"
+
+#: ../../relay/nodes.rst:86
+msgid "Node Root field"
+msgstr "节点根字段(Node Root field)"
+
+#: ../../relay/nodes.rst:88
+msgid ""
+"As is required in the `Relay specification`_, the server must implement a"
+" root field called ``node`` that returns a ``Node`` Interface."
+msgstr ""
+"正如 `Relay specification`_ 所要求的那样，服务器必须实现一个名为 ``node`` 的根字段，返回一个 ``Node`` 接口。"
+
+#: ../../relay/nodes.rst:91
+msgid ""
+"For this reason, ``graphene`` provides the field ``relay.Node.Field``, "
+"which links to any type in the Schema which implements ``Node``. Example "
+"usage:"
+msgstr ""
+"为此， ``graphene`` 提供了 ``relay.Node.Field`` 字段，它可以链接到模式(Schema)中"
+"任何实现 ``Node`` 的类型。使用示例:"
+

@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Graphene 2016
+# This file is distributed under the same license as the Graphene package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Graphene 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-02 11:47+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../types/interfaces.rst:4
+msgid "Interfaces"
+msgstr "接口(Interfaces)"
+
+#: ../../types/interfaces.rst:6
+msgid ""
+"An *Interface* is an abstract type that defines a certain set of fields "
+"that a type must include to implement the interface."
+msgstr ""
+"一个 *Interface* 是一个抽象的类型，它定义了一个类型必须包括的某些字段，以实现接口。"
+
+#: ../../types/interfaces.rst:9
+msgid ""
+"For example, you can define an Interface ``Character`` that represents "
+"any character in the Star Wars trilogy:"
+msgstr "例如，你可以定义一个接口(Interface) ``Character`` ，代表《星球大战》三部曲中的任何角色。"
+
+#: ../../types/interfaces.rst:22
+msgid ""
+"Any ObjectType that implements ``Character`` will have these exact "
+"fields, with these arguments and return types."
+msgstr "任何实现了 ``Character`` 的ObjectType都会有这些确切的字段，有这些参数和返回类型。"
+
+#: ../../types/interfaces.rst:25
+msgid "For example, here are some types that might implement ``Character``:"
+msgstr "例如，这里有一些可能实现 ``Character`` 的类型。"
+
+#: ../../types/interfaces.rst:43
+msgid ""
+"Both of these types have all of the fields from the ``Character`` "
+"interface, but also bring in extra fields, ``home_planet``, ``starships``"
+" and ``primary_function``, that are specific to that particular type of "
+"character."
+msgstr ""
+"这两种类型都有 ``Character`` 接口(interface)的所有字段，但也带来了额外的字段，"
+"即 ``home_planet`` 、 ``starships`` 和 ``primary_function`` ，它们是该特定类型的字符所特有的。"
+
+#: ../../types/interfaces.rst:47
+msgid "The full GraphQL schema defition will look like this:"
+msgstr "完整的GraphQL模式(schema)定义看起来是这样的。"
+
+#: ../../types/interfaces.rst:72
+msgid ""
+"Interfaces are useful when you want to return an object or set of "
+"objects, which might be of several different types."
+msgstr "当你想返回一个对象或一组对象时，接口(Interfaces)很有用，这些对象可能有几种不同的类型。"
+
+#: ../../types/interfaces.rst:75
+msgid ""
+"For example, you can define a field ``hero`` that resolves to any "
+"``Character``, depending on the episode, like this:"
+msgstr "例如，你可以定义一个字段 ``hero`` ，根据剧情，解析为任何 ``Character`` ，像这样:"
+
+#: ../../types/interfaces.rst:95
+msgid ""
+"This allows you to directly query for fields that exist on the Character "
+"interface as well as selecting specific fields on any type that "
+"implements the interface using `inline fragments "
+"<https://graphql.org/learn/queries/#inline-fragments>`_."
+msgstr ""
+"这允许你直接查询字符接口(interface)上存在的字段，以及"
+"使用 `内嵌式片段 <https://graphql.org/learn/queries/#inline-fragments>`_ 选择"
+"任何实现该接口的类型上的特定字段。"
+
+#: ../../types/interfaces.rst:99
+msgid "For example, the following query:"
+msgstr "例如，下面的查询:"
+
+#: ../../types/interfaces.rst:116
+msgid "Will return the following data with variables ``{ \"episode\": 4 }``:"
+msgstr "将返回以下数据，变量为 ``{ \"episode\": 4 }``:"
+
+#: ../../types/interfaces.rst:130
+msgid "And different data with the variables ``{ \"episode\": 5 }``:"
+msgstr "以及不同的数据与变量 ``{ \"episode\": 5 }``:"
+
+#: ../../types/interfaces.rst:145
+msgid "Resolving data objects to types"
+msgstr "将数据对象解析为类型"
+
+#: ../../types/interfaces.rst:147
+msgid ""
+"As you build out your schema in Graphene it's common for your resolvers "
+"to return objects that represent the data backing your GraphQL types "
+"rather than instances of the Graphene types (e.g. Django or SQLAlchemy "
+"models). This works well with ``ObjectType`` and ``Scalar`` fields, "
+"however when you start using Interfaces you might come across this error:"
+msgstr ""
+"当你在Graphene中构建模式(schema)时，你的解析器通常会返回代表GraphQL类型数据的对象，"
+"而不是Graphene类型的实例（例如Django或SQLAlchemy模型）。这在 ``ObjectType`` 和"
+" ``Scalar`` 字段中运行良好，但是当你开始使用Interfaces时，你可能会遇到这个错误:"
+
+#: ../../types/interfaces.rst:157
+msgid ""
+"This happens because Graphene doesn't have enough information to convert "
+"the data object into a Graphene type needed to resolve the ``Interface``."
+" To solve this you can define a ``resolve_type`` class method on the "
+"``Interface`` which maps a data object to a Graphene type:"
+msgstr ""
+"发生这种情况是因为Graphene没有足够的信息将数据对象转换为解决 ``Interface`` 所需的Graphene类型。"
+"为了解决这个问题，你可以在 ``Interface`` 上定义一个 ``resolve_type`` 类方法，"
+"将数据对象映射到Graphene类型:"
+

@@ -35,7 +35,7 @@ msgstr "字段（挂载类型）"
 
 #: ../../api/index.rst:35
 msgid "Fields (Unmounted Types)"
-msgstr "字段（未安装的类型)"
+msgstr "字段（未挂载的类型)"
 
 #: ../../api/index.rst:40
 msgid "GraphQL Scalars"

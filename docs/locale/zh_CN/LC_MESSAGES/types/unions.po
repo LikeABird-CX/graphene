@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Graphene 2016
+# This file is distributed under the same license as the Graphene package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Graphene 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-02 11:47+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../types/unions.rst:2
+msgid "Unions"
+msgstr "联合(Unions)"
+
+#: ../../types/unions.rst:4
+msgid ""
+"Union types are very similar to interfaces, but they don't get to specify"
+" any common fields between the types."
+msgstr "Union类型与接口(interfaces)非常相似，但他们没有得到指定类型之间的任何共同字段。"
+
+#: ../../types/unions.rst:7
+msgid "The basics:"
+msgstr "基础知识:"
+
+#: ../../types/unions.rst:9
+msgid "Each Union is a Python class that inherits from ``graphene.Union``."
+msgstr "每个Union是一个继承自 ``graphene.Union`` 的Python类。"
+
+#: ../../types/unions.rst:10
+msgid ""
+"Unions don't have any fields on it, just links to the possible "
+"objecttypes."
+msgstr "Unions上没有任何字段，只有指向可能的对象类型的链接。"
+
+#: ../../types/unions.rst:13
+msgid "Quick example"
+msgstr "快速示例"
+
+#: ../../types/unions.rst:15
+msgid ""
+"This example model defines several ObjectTypes with their own fields. "
+"``SearchResult`` is the implementation of ``Union`` of this object types."
+msgstr ""
+"这个例子模型定义了几个有自己字段的ObjectTypes。 ``SearchResult`` 是"
+"这些对象类型的 ``Union`` 的实现。"
+
+#: ../../types/unions.rst:39
+msgid ""
+"Wherever we return a SearchResult type in our schema, we might get a "
+"Human, a Droid, or a Starship. Note that members of a union type need to "
+"be concrete object types; you can't create a union type out of interfaces"
+" or other unions."
+msgstr ""
+"在我们的模式(schema)中，无论我们在哪里返回一个SearchResult类型，我们都可能得到"
+"一个人类、一个机器人或一艘星舰。请注意，union类型的成员必须是具体的对象类型；"
+"你不能从接口(interfaces)或其他union中创建一个union类型。"
+
+#: ../../types/unions.rst:43
+msgid "The above types have the following representation in a schema:"
+msgstr "上述类型在模式(schema)中的表示方法如下:"
+

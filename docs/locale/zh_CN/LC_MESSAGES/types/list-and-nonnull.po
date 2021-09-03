@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Graphene 2016
+# This file is distributed under the same license as the Graphene package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Graphene 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-02 11:47+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../types/list-and-nonnull.rst:2
+msgid "Lists and Non-Null"
+msgstr "列表和非空(Lists and Non-Null)"
+
+#: ../../types/list-and-nonnull.rst:4
+msgid ""
+"Object types, scalars, and enums are the only kinds of types you can "
+"define in Graphene. But when you use the types in other parts of the "
+"schema, or in your query variable declarations, you can apply additional "
+"type modifiers that affect validation of those values."
+msgstr ""
+"对象类型(Object types)、标量(scalars)和枚举(enums)是你可以在Graphene中定义的唯一几种类型。"
+"但是当你在模式(schema)的其他部分或在你的查询变量声明中使用这些类型时，你可以应用额外的类型修改器(type modifiers)"
+"来影响这些值的验证。"
+
+#: ../../types/list-and-nonnull.rst:10
+msgid "NonNull"
+msgstr "非空(NonNull)"
+
+#: ../../types/list-and-nonnull.rst:20
+msgid ""
+"Here, we're using a ``String`` type and marking it as Non-Null by "
+"wrapping it using the ``NonNull`` class. This means that our server "
+"always expects to return a non-null value for this field, and if it ends "
+"up getting a null value that will actually trigger a GraphQL execution "
+"error, letting the client know that something has gone wrong."
+msgstr ""
+"在这里，我们使用一个 ``String`` 类型，并通过使用 ``NonNull`` 类将其包装为非空值。"
+"这意味着我们的服务器总是期望为这个字段返回一个非空值，如果它最终得到一个空值，"
+"实际上会触发一个GraphQL执行错误，让客户端知道出了问题。"
+
+#: ../../types/list-and-nonnull.rst:27
+msgid "The previous ``NonNull`` code snippet is also equivalent to:"
+msgstr "前面的 ``NonNull`` 代码片断也相当于:"
+
+#: ../../types/list-and-nonnull.rst:38
+msgid "List"
+msgstr "列表(List)"
+
+#: ../../types/list-and-nonnull.rst:47
+msgid ""
+"Lists work in a similar way: We can use a type modifier to mark a type as"
+" a ``List``, which indicates that this field will return a list of that "
+"type. It works the same for arguments, where the validation step will "
+"expect a list for that value."
+msgstr ""
+"列表的工作方式与此类似。我们可以使用一个类型修改器(type modifiers)来标记一个类型为 ``List`` ，"
+"这表明这个字段将返回该类型的列表。这对参数的作用是一样的，验证步骤将期望该值为一个列表。"
+
+#: ../../types/list-and-nonnull.rst:53
+msgid "NonNull Lists"
+msgstr "非空列表(NonNull Lists)"
+
+#: ../../types/list-and-nonnull.rst:55
+msgid ""
+"By default items in a list will be considered nullable. To define a list "
+"without any nullable items the type needs to be marked as ``NonNull``. "
+"For example:"
+msgstr ""
+"默认情况下，列表中的项目将被视为可为空的。要定义一个没有任何空项的列表，需要将类型标记为 ``NonNull`` 。比如说:"
+
+#: ../../types/list-and-nonnull.rst:65
+msgid "The above results in the type definition:"
+msgstr "以上的结果就是类型定义:"
+
