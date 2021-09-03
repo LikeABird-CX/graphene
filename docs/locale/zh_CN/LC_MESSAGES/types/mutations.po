@@ -1,0 +1,116 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Graphene 2016
+# This file is distributed under the same license as the Graphene package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Graphene 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-09-02 11:47+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../types/mutations.rst:2
+msgid "Mutations"
+msgstr "突变(Mutations)"
+
+#: ../../types/mutations.rst:4
+msgid "A Mutation is a special ObjectType that also defines an Input."
+msgstr "突变是一个特殊的ObjectType，也定义了一个输入。"
+
+#: ../../types/mutations.rst:7
+msgid "Quick example"
+msgstr "快速示例"
+
+#: ../../types/mutations.rst:9
+msgid "This example defines a Mutation:"
+msgstr "这个例子定义了一个突变:"
+
+#: ../../types/mutations.rst:27
+msgid ""
+"**person** and **ok** are the output fields of the Mutation when it is "
+"resolved."
+msgstr "**person** 和 **ok** 是突变被解析时的输出字段。"
+
+#: ../../types/mutations.rst:30
+msgid ""
+"**Arguments** attributes are the arguments that the Mutation "
+"``CreatePerson`` needs for resolving, in this case **name** will be the "
+"only argument for the mutation."
+msgstr ""
+"**Arguments** 属性是突变 ``CreatePerson`` 需要解析的参数，"
+"在这种情况下， **name** 将是突变的唯一参数。"
+
+#: ../../types/mutations.rst:34
+msgid ""
+"**mutate** is the function that will be applied once the mutation is "
+"called. This method is just a special resolver that we can change data "
+"within. It takes the same arguments as the standard query "
+":ref:`ResolverArguments`."
+msgstr ""
+"**mutate** 是一旦调用突变就会应用的函数。这个方法只是一个特殊的解析器，"
+"我们可以在其中改变数据。它的参数与标准查询的参数相同 :ref:`ResolverArguments` 。"
+
+#: ../../types/mutations.rst:38
+msgid "So, we can finish our schema like this:"
+msgstr "因此，我们可以这样完成我们的模式(schema):"
+
+#: ../../types/mutations.rst:58
+msgid "Executing the Mutation"
+msgstr "执行突变(Mutation)"
+
+#: ../../types/mutations.rst:60 ../../types/mutations.rst:163
+msgid "Then, if we query (``schema.execute(query_str)``) the following:"
+msgstr "然后，如果我们查询( ``schema.execute(query_str)`` )如下:"
+
+#: ../../types/mutations.rst:73 ../../types/mutations.rst:174
+msgid "We should receive:"
+msgstr "我们应该收到:"
+
+#: ../../types/mutations.rst:87
+msgid "InputFields and InputObjectTypes"
+msgstr "输入字段(InputFields)和输入对象类型(InputObjectTypes)"
+
+#: ../../types/mutations.rst:88
+msgid "InputFields are used in mutations to allow nested input data for mutations"
+msgstr "InputFields在突变(mutations)中使用，允许嵌套的输入数据用于突变(mutations)."
+
+#: ../../types/mutations.rst:90
+msgid ""
+"To use an InputField you define an InputObjectType that specifies the "
+"structure of your input data"
+msgstr "要使用InputField，你要定义一个InputObjectType，指定你的输入数据的结构。"
+
+#: ../../types/mutations.rst:115
+msgid "Note that  **name** and **age** are part of **person_data** now"
+msgstr "请注意， **name** 和 **age** 现在是 **person_data** 的一部分。"
+
+#: ../../types/mutations.rst:117
+msgid "Using the above mutation your new query would look like this:"
+msgstr "使用上述突变(mutation)，你的新查询将看起来像这样:"
+
+#: ../../types/mutations.rst:130
+msgid ""
+"InputObjectTypes can also be fields of InputObjectTypes allowing you to "
+"have as complex of input data as you need"
+msgstr "InputObjectTypes也可以是InputObjectTypes的字段，允许你拥有你所需要的复杂的输入数据。"
+
+#: ../../types/mutations.rst:147
+msgid "Output type example"
+msgstr "输出类型示例"
+
+#: ../../types/mutations.rst:148
+msgid ""
+"To return an existing ObjectType instead of a mutation-specific type, set"
+" the **Output** attribute to the desired ObjectType:"
+msgstr ""
+"要返回一个现有的ObjectType而不是一个特定的突变(mutation)类型，"
+"将 **Output** 属性设置为所需的ObjectType:"
+

@@ -222,13 +222,13 @@ msgstr "你可以为你的模式(schema)创建自定义标量(scalars)。下面�
 
 #: ../../types/scalars.rst:283
 msgid "Mounting Scalars"
-msgstr "载入标量(Mounting Scalars)"
+msgstr "挂载标量(Mounting Scalars)"
 
 #: ../../types/scalars.rst:285
 msgid ""
 "Scalars mounted in a ``ObjectType``, ``Interface`` or ``Mutation`` act as"
 " ``Field``\\ s."
-msgstr "载入(mounted)到 ``ObjectType`` 、 ``Interface`` 或 ``Mutation`` 中的标量(Scalars)可以作为 ``Field`` 。"
+msgstr "挂载(mounted)到 ``ObjectType`` 、 ``Interface`` 或 ``Mutation`` 中的标量(Scalars)可以作为 ``Field`` 。"
 
 #: ../../types/scalars.rst:298
 msgid ""
@@ -239,5 +239,5 @@ msgstr ""
 
 #: ../../types/scalars.rst:301
 msgid "Types mounted in a ``Field`` act as ``Argument``\\ s."
-msgstr "载入(mounted)到 ``Field`` 中的类型(Types)可以作为 ``Argument`` 。"
+msgstr "挂载(mounted)到 ``Field`` 中的类型(Types)可以作为 ``Argument`` 。"
 
